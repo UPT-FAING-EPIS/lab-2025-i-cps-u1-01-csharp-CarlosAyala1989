@@ -17,7 +17,7 @@ namespace Bank.Domain.Tests
             account.Debit(debitAmount);
             // Assert
             double actual = account.Balance;
-            Assert.AreEqual(expected, actual, 0.001, "Account not debited correctly");
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual(expected, actual, 0.001, "Account not debited correctly");
         }
     }
 }
